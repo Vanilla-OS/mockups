@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkWindow" id="window">
+    <property name="default-width">600</property>
+    <property name="default-height">600</property>
+    <property name="title">Assistance</property>
+    <property name="titlebar">
+      <object class="GtkHeaderBar">
+        <property name="title-widget">
+          <object class="AdwWindowTitle">
+            <property name="title" translatable="yes">Showing Report</property>
+            <property name="subtitle" translatable="yes">Apx not loading my subsystem</property>
+          </object>
+        </property>
+        <child type="start">
+          <object class="GtkButton">
+            <property name="icon-name">go-previous-symbolic</property>
+          </object>
+        </child>
+      </object>
+    </property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="valign">fill</property>
+            <property name="vexpand">yes</property>
+            <child>
+              <object class="AdwClamp">
+                <property name="margin-top">20</property>
+                <property name="margin-bottom">20</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">10</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo ut odio mattis gravida. Fusce at tempus mauris. Quisque dictum leo in tellus gravida tempus. Maecenas a dapibus lorem.</property>
+                            <property name="halign">fill</property>
+                            <property name="wrap">true</property>
+                            <property name="wrap-mode">2</property>
+                            <property name="margin-top">10</property>
+                            <property name="margin-start">12</property>
+                            <property name="margin-bottom">10</property>
+                            <property name="margin-end">12</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Vanilla OS Team</property>
+                            <property name="halign">start</property>
+                            <property name="wrap">true</property>
+                            <property name="margin-start">12</property>
+                            <property name="margin-bottom">10</property>
+                            <property name="margin-end">12</property>
+                            <style>
+                              <class name="dim-label" />
+                            </style>
+                          </object>
+                        </child>
+                        <style>
+                          <class name="card" />
+                        </style>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Nunc ac est consequat, rhoncus nulla a, ultricies diam. Maecenas in malesuada ante, et pellentesque enim. Curabitur mauris metus, suscipit sed ex eu, luctus rutrum dolor.</property>
+                            <property name="halign">fill</property>
+                            <property name="wrap">true</property>
+                            <property name="margin-top">10</property>
+                            <property name="margin-start">12</property>
+                            <property name="margin-bottom">10</property>
+                            <property name="margin-end">12</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">You</property>
+                            <property name="halign">end</property>
+                            <property name="wrap">true</property>
+                            <property name="wrap-mode">2</property>
+                            <property name="margin-start">12</property>
+                            <property name="margin-bottom">10</property>
+                            <property name="margin-end">12</property>
+                            <style>
+                              <class name="dim-label" />
+                            </style>
+                          </object>
+                        </child>
+                        <style>
+                          <class name="card" />
+                        </style>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Donec id dolor in felis porta ultrices vel eget velit. Quisque sodales rhoncus rutrum. Duis id maximus elit. Cras cursus nisl non porttitor eleifend. Donec facilisis, odio quis aliquet tempus, urna elit consequat enim, sed eleifend dolor libero varius orci. Vivamus consequat velit nec sapien porttitor volutpat. Donec at turpis ac tortor tincidunt euismod et ut le</property>
+                            <property name="halign">fill</property>
+                            <property name="wrap">true</property>
+                            <property name="wrap-mode">2</property>
+                            <property name="margin-top">10</property>
+                            <property name="margin-start">12</property>
+                            <property name="margin-bottom">10</property>
+                            <property name="margin-end">12</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Vanilla OS Team</property>
+                            <property name="halign">start</property>
+                            <property name="wrap">true</property>
+                            <property name="margin-start">12</property>
+                            <property name="margin-bottom">10</property>
+                            <property name="margin-end">12</property>
+                            <style>
+                              <class name="dim-label" />
+                            </style>
+                          </object>
+                        </child>
+                        <style>
+                          <class name="card" />
+                        </style>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSeparator"></object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="spacing">5</property>
+            <child>
+              <object class="GtkTextView">
+                <property name="hexpand">yes</property>
+                <property name="margin-top">10</property>
+                <property name="margin-start">12</property>
+                <property name="margin-bottom">10</property>
+                <property name="margin-end">12</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="icon-name">go-next-symbolic</property>
+                <style>
+                  <class name="flat" />
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
+
