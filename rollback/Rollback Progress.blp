@@ -1,0 +1,35 @@
+using Gtk 4.0;
+using Adw 1;
+
+Adw.Window {
+  default-width: 600;
+  default-height: 600;
+  title: "Vanilla OS Rollback";
+  
+  Box {
+    orientation: vertical;
+    
+    Adw.HeaderBar {
+      styles [
+        "flat",
+      ]
+    }
+  
+    Adw.StatusPage {
+      title: _("Rollback in Progress");
+      description: _("Please wait while the update is being reverted.");
+      icon-name: "vanilla-icon";
+      valign: center;
+      vexpand: true;
+      hexpand: true;
+    
+      Box {
+        halign: center;
+      
+        ProgressBar {
+          fraction: 0.2;
+        }
+      }
+    }
+  }
+}

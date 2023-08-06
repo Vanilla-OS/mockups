@@ -1,0 +1,49 @@
+using Gtk 4.0;
+using Adw 1;
+
+Adw.Window {
+  default-width: 600;
+  default-height: 600;
+  title: "Vanilla OS Rollback";
+  
+  Box {
+    orientation: vertical;
+    
+    Adw.HeaderBar {
+      styles [
+        "flat"
+      ]
+    }
+  
+    Adw.StatusPage {
+      title: _("Rollback Failed");
+      description: _("The update has not been reverted. Please check the logs below for further information.");
+      icon-name: "error-symbolic";
+      valign: center;
+      vexpand: true;
+      hexpand: true;
+    
+      Box {
+        halign: center;
+      
+        Button {
+          label: _("Close");
+          margin-end: 20;
+        
+          styles [
+            "pill"
+          ]
+        }
+      
+        Button {
+          label: _("Logs");
+        
+          styles [
+            "pill",
+            "suggested-action"
+          ]
+        }
+      }
+    }
+  }
+}

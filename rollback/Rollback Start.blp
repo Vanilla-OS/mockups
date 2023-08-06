@@ -1,0 +1,49 @@
+using Gtk 4.0;
+using Adw 1;
+
+Adw.Window {
+  default-width: 600;
+  default-height: 600;
+  title: "Vanilla OS Rollback";
+
+  Box {
+    orientation: vertical;
+
+    Adw.HeaderBar {
+      styles [
+        "flat",
+      ]
+    }
+
+    Adw.StatusPage {
+      title: _("Roll Back?");
+      description: _("We have noticed that you booted into the previous state of your system. You can roll back to this state, which will revert the latest system update.");
+      icon-name: "history-undo-symbolic";
+      valign: center;
+      vexpand: true;
+      hexpand: true;
+
+      Box {
+        halign: center;
+
+        Button {
+          label: _("Close");
+          margin-end: 20;
+
+          styles [
+            "pill",
+          ]
+        }
+
+        Button {
+          label: _("Roll Back");
+
+          styles [
+            "pill",
+            "suggested-action",
+          ]
+        }
+      }
+    }
+  }
+}
