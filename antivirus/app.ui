@@ -128,7 +128,7 @@
                         <child>
                           <object class="AdwActionRow">
                             <property name="title">Smart Scan</property>
-                            <property name="subtitle">Choose whether to scan files before sideloading.</property>
+                            <property name="subtitle">Choose to sync only if the device is not under heavy usage.</property>
                             <child type="suffix">
                               <object class="GtkSwitch">
                                 <property name="active">yes</property>
@@ -140,7 +140,7 @@
                         <child>
                           <object class="AdwActionRow">
                             <property name="title">Scan Before Sideloading</property>
-                            <property name="subtitle">Choose to sync only if the device is not under heavy usage.</property>
+                            <property name="subtitle">Choose whether to scan files before sideloading.</property>
                             <child type="suffix">
                               <object class="GtkSwitch">
                                 <property name="active">yes</property>

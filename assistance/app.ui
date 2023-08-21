@@ -53,7 +53,7 @@
             <property name="title">Your Reports</property>
             <child>
               <object class="AdwActionRow">
-                <property name="title">Apx now loading my subsystem</property>
+                <property name="title">Apx not loading my subsystem</property>
                 <property name="subtitle">There are new answers.</property>
                 <child type="prefix">
                   <object class="GtkImage">
